@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub API Challenge</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-4">
+      <div class="container mx-auto flex items-center justify-between">
+        <div>
+          <img id="avatarImage" src="logo.png" alt="Logo" class="logo h-20" />
+        </div>
+        <div>
+          <h1 id="thisBio" class="userInfo text-2xl"></h1>
+        </div>
+        <div>
+          <h1 class="text-2xl">GitHub API Challenge</h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto p-4">
+      <div>
+        <button
+          class="my-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          onClick="newRepo()"
+        >
+          Nou Repositori de Prova
+        </button>
+        <button
+          class="my-5 bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          onClick="deleteRepo()"
+        >
+          Borrar repositori de prova
+        </button>
+      </div>
+
+      <!-- div per llistar els repos-->
+      <div id="meusRepos" class="repo-list flex flex-wrap justify-between gap-4"></div>  
+
+
+    </main>
+
+    <script type="module" src="ex1.js"></script>
+  </body>
+</html>
